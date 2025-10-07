@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@media only screen and (max-width: 800px) {
+	p {
+		/* More space for text. */
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+	/* Hide text in gallery container if window is too small. */
+	.gallery div p {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.gallery {
+		/* Resize large gallery. */
+		width: 75%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.gallery {
+		/* Resize large gallery. */
+		width: 75%;
+	}
+}
+
+@media only screen and (min-width: 1700px) {
+	.gallery {
+		/* Resize large gallery. */
+		width: 60%;
+	}
+}
