@@ -10,9 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
 			navLink.parentElement.className += "nav-active";
 		}
 	}
-	document.querySelector("").addEventListener("change", function () {
-		/* Change colour variables. */
-		document.querySelector(":root").style.setProperty("--primary-color", "#000000")
-		document.querySelector(":root").style.setProperty("--secondary-color", "grey")
-	})
+	/* For all radio input. */
+	document.querySelectorAll("fieldset > input[data-radio]").forEach((each) => {
+		each.addEventListener("change", function () {
+			each.getAttribute("data-radio");
+			/* Change colour variables. */
+			document.querySelector(":root").style.setProperty("--primary-color", "var(--" + each.getAttribute("data-radio") + "-primary-color)")
+			document.querySelector(":root").style.setProperty("--secondary-color", "var(--" + each.getAttribute("data-radio") + "-secondary-color)")
+		})
+	});
 });
