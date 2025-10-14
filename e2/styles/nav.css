@@ -1,0 +1,117 @@
+header nav {
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	/* Offset from normal document flow. Required for flexbox display. */
+	position: relative;
+}
+
+header nav ul {
+	display: flex;
+	/* Center items in flexbox. */
+	justify-content: center;
+}
+
+header nav ul li {
+	/* Position spacing. */
+	padding: 10px 20px 10px 20px;
+	margin: 20px 10px 20px 10px;
+	border-radius: 10px;
+}
+
+header nav ul li[data-icon="menu"] {
+	/* Hide menu icon if screen is large enough to show all items. */
+	display: none;
+}
+
+/* Spacing for icons, except for the menu one. */
+header nav ul li a[data-icon]:not([data-icon="menu"])::before {
+	margin-right: 10px;
+}
+
+/* Colour theme. */
+header .nav-active {
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+}
+
+header nav ul li:hover {
+	color: var(--primary-color);
+}
+
+/* Borders. */
+header nav ul li {
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+header nav ul li:hover {
+	border-color: var(--primary-color);
+}
+
+@media screen and (max-width: 660px) and (min-width: 411px) {
+
+	/* Filter out menu label. */
+	header nav ul li a span {
+		/* Hide text. */
+		font-size: 0;
+	}
+
+	/* Remove spacing after icons. */
+	header nav ul li a[data-icon]:not([data-icon="menu"])::before {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 410px) {
+
+	header nav ul li:not([data-icon="menu"]):not(.nav-active) {
+		/* Hide all except active item and menu icon. */
+		/* Same style as the vh class. */
+		position: absolute;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		width: 1px;
+		margin: -1px;
+		padding: 0;
+		border: 0;
+	}
+
+	header nav ul li {
+		/* Expand all menu items. */
+		width: 100%;
+		/* Change spacing. */
+		margin: 10px 0 10px 0;
+	}
+
+	/* Reset background colour for active item. */
+	header .nav-active {
+		color: inherit;
+		background-color: inherit;
+	}
+
+	header ul {
+		/* Navigation bar with solid fill. */
+		color: var(--primary-color);
+		background-color: var(--secondary-color);
+	}
+
+	header nav ul li[data-icon="menu"] {
+		/* Show menu. */
+		width: fit-content;
+		display: inherit;
+	}
+
+	header nav ul {
+		/* Change flex alignment. */
+		justify-content: right;
+	}
+
+	/* Remove borders. */
+	header nav ul li {
+		border-width: 0;
+	}
+}
