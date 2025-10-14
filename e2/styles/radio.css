@@ -1,0 +1,13 @@
+header fieldset {
+	/* Theme colour. */
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	position: relative;
+	width: fit-content;
+}
+
+header fieldset input[data-radio="purple"] {
+	accent-color: #232323;
+}
