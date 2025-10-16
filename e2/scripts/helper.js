@@ -1,8 +1,11 @@
 /* Require DOM access. */
 document.addEventListener("DOMContentLoaded", function () {
 	/* Add nav-active to current page. */
-	const current_page = location.pathname.split("/")[2];
-	if (current_page === "") return;
+	let current_page = location.pathname.split("/")[2];
+	if (current_page === "") {
+		/* Fix unrecognized page at root directory. */
+		current_page = "index.html";
+	};
 	const navLinks = document.querySelectorAll("nav ul li a");
 	for (const navLink of navLinks) {
 		if (navLink.getAttribute("href") == current_page) {
