@@ -105,6 +105,10 @@ header nav ul li:hover {
 		display: inherit;
 	}
 
+	header nav {
+		margin-bottom: 30px;
+	}
+
 	header nav ul {
 		/* Change flex alignment. */
 		justify-content: right;
