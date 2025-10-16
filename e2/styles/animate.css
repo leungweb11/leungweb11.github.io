@@ -1,0 +1,7 @@
+header nav ul li {
+	/* Animations for the navigation bar. */
+	transition: color 1s, background-color 1s, border-color 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+/* https://docs.fontawesome.com/web/style/animate */
