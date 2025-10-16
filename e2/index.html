@@ -7,7 +7,13 @@
 	<meta name="author" content="Evan Huang">
 	<meta name="description" content="This is my home page.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="styles/index.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/core.css">
+	<!-- Animations are completely optional and will only be served if the user did not opt-out. -->
+	<link rel="stylesheet" media="(prefers-reduced-motion: no-preference)" href="styles/animate.css"/>
+	<!-- Import sweetalert2. -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.2/dist/sweetalert2.all.min.js" integrity="sha256-UDxzcGMxkwD97cSfW4OEUugnBE+zMHthTEafrkkPAyo=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.2/dist/sweetalert2.min.css" integrity="sha256-VqBagSPahwzjkw8/E0KAY23AmFZuYBxX6f6uVDgY1rg=" crossorigin="anonymous">
+	<!-- Helper script. -->
 	<script src="scripts/helper.js"></script>
 </head>
 
@@ -29,12 +35,12 @@
 		<fieldset>
 			<legend>Theme</legend>
 			<!-- Radio buttons are grouped by name.	-->
-			<input data-radio="purple" type="radio" name="colour theme" checked>
-			<input data-radio="blue" type="radio" name="colour theme">
-			<input data-radio="red" type="radio" name="colour theme">
-			<input data-radio="orange" type="radio" name="colour theme">
-			<input data-radio="green" type="radio" name="colour theme">
-			<input data-radio="grey" type="radio" name="colour theme">
+			<input data-radio="purple" type="radio" name="colour theme" value="Purple" checked>
+			<input data-radio="blue" type="radio" name="colour theme" value="Blue">
+			<input data-radio="red" type="radio" name="colour theme" value="Red">
+			<input data-radio="orange" type="radio" name="colour theme" value="Orange">
+			<input data-radio="green" type="radio" name="colour theme" value="Green">
+			<input data-radio="grey" type="radio" name="colour theme" value="Grey">
 		</fieldset>
 	</header>
 
