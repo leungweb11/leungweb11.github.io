@@ -32,7 +32,7 @@ header nav ul li a[data-icon]:not([data-icon="menu"])::before {
 }
 
 /* Colour theme. */
-header .nav-active {
+header nav ul li.nav-active {
 	color: var(--primary-colour);
 	background-color: var(--secondary-colour);
 }
@@ -52,7 +52,7 @@ header nav ul li:hover {
 	border-color: var(--primary-colour);
 }
 
-@media screen and (max-width: 660px) and (min-width: 411px) {
+@media screen and (max-width: 715px) and (min-width: 411px) {
 
 	/* Filter out menu label. */
 	header nav ul li a span {
@@ -86,6 +86,8 @@ header nav ul li:hover {
 		width: fit-content;
 		/* Change spacing. */
 		margin: 10px 0 10px 0;
+		/* Remove borders. */
+		border-width: 0;
 	}
 
 	/* Reset background colour for active item. */
@@ -111,10 +113,5 @@ header nav ul li:hover {
 
 	header nav {
 		margin-bottom: 30px;
-	}
-
-	/* Remove borders. */
-	header nav ul li {
-		border-width: 0;
 	}
 }
