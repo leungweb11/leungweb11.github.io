@@ -1,0 +1,55 @@
+.gallery {
+	/* Centering container. */
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	width: fit-content;
+	/* Offset from normal document flow. */
+	position: relative;
+	/* Required for centering. */
+	width: 85%;
+	padding-left: 2.4%;
+	/* Flex box. */
+	display: flex;
+	/* Allow items on multiple lines. */
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.gallery div {
+	/* Required to act as a container for text positioning. */
+	/* Left padding on main container: 2.4. Right padding for items: 2.4. Width of each container: 22%. */
+	width: 22%;
+	padding-right: 2.4%;
+	position: relative;
+}
+
+.gallery div img {
+	width: 100%;
+	filter: blur(4px) brightness(0.5) saturate(0);
+	margin: 10px;
+	transition: filter 0.5s ease;
+	/* Resize images. */
+	aspect-ratio: 1 / 1.8;
+}
+
+.gallery div img:hover {
+	filter: blur(0) brightness(1) saturate(1);
+	transition: filter 0.5s ease;
+}
+
+.gallery div p {
+	text-transform: uppercase;
+	opacity: inherit;
+	color: white;
+	/* Container image obscure view. */
+	z-index: 1;
+	/* Combine vertical and horizontal centering. */
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	/* Leave no space behind. */
+	position: absolute;
+	width: fit-content;
+}
