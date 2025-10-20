@@ -1,10 +1,10 @@
-header nav ul {
+footer, nav ul {
 	/* Animations for the navigation bar. */
 	transition: color 1s, background-color 1s, border-color 0.5s;
 	transition-timing-function: ease-in-out;
 }
 
-header nav ul li {
+nav ul li {
 	/* For navigation items. */
 	transition: inherit;
 	transition-timing-function: inherit;
