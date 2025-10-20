@@ -2,25 +2,22 @@
 	/* Centering container. */
 	left: 50%;
 	transform: translate(-50%, 0);
-	text-align: center;
-	width: fit-content;
 	/* Offset from normal document flow. */
 	position: relative;
-	/* Required for centering. */
-	width: 85%;
-	padding-left: 2.4%;
 	/* Flex box. */
 	display: flex;
 	/* Allow items on multiple lines. */
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	/* Centering container items. */
+	justify-content: center;
+	/* Total width. */
+	width: 90%;
 }
 
 .gallery div {
 	/* Required to act as a container for text positioning. */
-	/* Left padding on main container: 2.4. Right padding for items: 2.4. Width of each container: 22%. */
-	width: 22%;
-	padding-right: 2.4%;
+	width: 200px;
+	padding-right: 20px;
 	position: relative;
 }
 
@@ -30,7 +27,7 @@
 	margin: 10px;
 	transition: filter 0.5s ease;
 	/* Resize images. */
-	aspect-ratio: 1 / 1.8;
+	aspect-ratio: 3.5 / 5;
 }
 
 .gallery div img:hover {
@@ -52,4 +49,22 @@
 	/* Leave no space behind. */
 	position: absolute;
 	width: fit-content;
+}
+
+@media screen and (max-width: 995px) and (min-width: 451px){
+	.gallery {
+		/* Lower container width. */
+		width: 75%;
+	}
+	.gallery div {
+		/* Width of items within gallery. */
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.gallery {
+		/* Full container width. */
+		width: 100%;
+	}
 }
