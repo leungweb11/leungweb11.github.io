@@ -1,4 +1,4 @@
-header nav {
+nav {
 	left: 50%;
 	width: 100%;
 	transform: translate(-50%, 0);
@@ -7,7 +7,7 @@ header nav {
 	position: relative;
 }
 
-header nav ul {
+nav ul {
 	display: flex;
 	flex-wrap: wrap;
 	/* Center items in flexbox. */
