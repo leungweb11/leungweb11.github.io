@@ -1,0 +1,17 @@
+footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	/* Center items in flexbox. */
+	justify-content: center;
+}
+
+footer {
+	margin-top: 90px;
+	color: var(--primary-colour);
+	background-color: var(--secondary-colour);
+}
+
+footer nav ul li {
+	/* Position spacing. */
+	margin: 20px 10px 20px 10px;
+}

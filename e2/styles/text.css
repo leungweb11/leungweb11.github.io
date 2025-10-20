@@ -1,0 +1,16 @@
+p {
+	/* Centering container. */
+	left: 50%;
+	transform: translate(-50%, 0);
+	/* Offset from normal document flow. */
+	position: relative;
+	/* Flex box. */
+	display: flex;
+	/* Allow items on multiple lines. */
+	flex-wrap: wrap;
+	/* Centering container items. */
+	justify-content: center;
+	/* Total width. */
+	width: 75%;
+	max-width: 750px;
+}
