@@ -12,6 +12,8 @@
 	justify-content: center;
 	/* Total width. */
 	width: 90%;
+	/* Spacing between gallery and text. */
+	margin-bottom: 60px;
 }
 
 .gallery div {
