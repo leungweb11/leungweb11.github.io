@@ -57,7 +57,7 @@ footer {
 ::view-transition-group(match-element),
 ::view-transition-old(match-element),
 ::view-transition-new(match-element) {
-	animation-duration: 0s;
+	animation: none;
 }
 
 @media screen and (max-width: 1024px) {
