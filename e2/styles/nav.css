@@ -16,9 +16,14 @@ nav ul {
 	user-select: none;
 }
 
+header nav ul li a {
+	padding: 10px 20px 10px 20px;
+	display: block;
+}
+
 header nav ul li {
 	/* Position spacing. */
-	padding: 10px 20px 10px 20px;
+	height: fit-content;
 	margin: 20px 10px 20px 10px;
 	border-radius: 10px;
 }
