@@ -116,6 +116,11 @@ header nav ul li:hover {
 		/* Force right alignment. */
 		position: absolute;
 		right: 0px;
+		padding-right: 20px;
+		/* Center element vertically. */
+		top: 50%;
+		margin: 0;
+		transform: translateY(-50%);
 	}
 
 	header nav {
