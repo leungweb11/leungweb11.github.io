@@ -19,10 +19,9 @@
 }
 
 ::selection {
-	color: var(--primary-colour);
 	background-color: var(--secondary-colour);
 }
 
 body {
-	font-family: "Source Code Pro", "Consolas", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", "monospace"
+	font-family: "Source Code Pro", "Consolas", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", "monospace";
 }
