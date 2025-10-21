@@ -12,6 +12,8 @@ nav ul {
 	flex-wrap: wrap;
 	/* Center items in flexbox. */
 	justify-content: center;
+	/* Disable text selection. */
+	user-select: none;
 }
 
 header nav ul li {
