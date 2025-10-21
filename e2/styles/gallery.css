@@ -37,6 +37,11 @@
 	transition: filter 0.5s ease;
 }
 
+.gallery div img:hover {
+	filter: blur(0) brightness(1) saturate(1);
+	transition: filter 0.5s ease;
+}
+
 .gallery div p {
 	text-transform: uppercase;
 	opacity: inherit;
@@ -53,11 +58,12 @@
 	width: fit-content;
 }
 
-@media screen and (max-width: 995px) and (min-width: 451px){
+@media screen and (max-width: 995px) and (min-width: 451px) {
 	.gallery {
 		/* Lower container width. */
 		width: 75%;
 	}
+
 	.gallery div {
 		/* Width of items within gallery. */
 		width: 250px;
