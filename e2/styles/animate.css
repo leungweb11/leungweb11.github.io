@@ -11,9 +11,6 @@ nav ul li {
 	transition-timing-function: inherit;
 }
 
-/* https://docs.fontawesome.com/web/style/animate */
-
-
 @view-transition {
 	navigation: auto;
 }
