@@ -1,6 +1,7 @@
 # Exclude cache folders.
 node_modules/
 experiments/
+# Branch worktree for gh-pages.
 dist/
 # Ignore hidden files.
 .*
