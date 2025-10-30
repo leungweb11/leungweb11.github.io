@@ -11,8 +11,8 @@
 	"author": "EKHH",
 	"type": "module",
 	"scripts": {
-		"build": "bun build *.html --production --outdir=dist",
-		"watch": "bun build *.html --watch --outdir=experiments"
+		"build": "bun build *.html --production --minify --target=browser --outdir=dist",
+		"watch": "bun build *.html --watch --console --outdir=experiments"
 	},
 	"devDependencies": {
 		"@types/bun": "latest",
@@ -22,6 +22,6 @@
 		"animejs": "^4.2.2"
 	},
 	"peerDependencies": {
-		"typescript": "^5"
+		"typescript": "^5.9.3"
 	}
 }
