@@ -1,6 +1,0 @@
-# Ignore hidden files.
-.*
-# Include this file.
-!.gitignore
-# Include EditorConfig.
-!.editorconfig
