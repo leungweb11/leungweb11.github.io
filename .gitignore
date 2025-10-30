@@ -1,11 +1,10 @@
+# Exclude cache folders.
+node_modules/
+experiments/
+dist/
 # Ignore hidden files.
 .*
-# Include this file.
-!/.gitignore
 # Include configuration entries.
+!/.gitignore
 !/.editorconfig
 !/.env
-# Exclude node modules.
-node_modules/
-src/
-dist/
