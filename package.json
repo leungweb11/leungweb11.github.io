@@ -11,15 +11,16 @@
 	"author": "EKHH",
 	"type": "module",
 	"scripts": {
-		"build": "bun build src/index.html --production --outdir=dist"
+		"build": "bun build *.html --production --outdir=dist",
+		"watch": "bun build *.html --watch --outdir=experiments"
 	},
 	"devDependencies": {
-		"@types/bun": "latest"
+		"@types/bun": "latest",
+		"@types/animejs": "latest"
 	},
 	"dependencies": {
 		"animejs": "^4.2.2"
 	},
-	"module": "index.ts",
 	"peerDependencies": {
 		"typescript": "^5"
 	}
