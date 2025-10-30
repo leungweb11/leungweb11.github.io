@@ -1,0 +1,4 @@
+# Ignore hidden files.
+.*
+# Include this file.
+!/.gitignore
