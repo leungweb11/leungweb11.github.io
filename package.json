@@ -1,0 +1,26 @@
+{
+	"name": "prj-comic",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://github.com/leungweb11/leungweb11.github.io#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/leungweb11/leungweb11.github.io.git"
+	},
+	"license": "GPL-3.0-or-later",
+	"author": "EKHH",
+	"type": "module",
+	"scripts": {
+		"build": "bun build src/index.html --production --outdir=dist"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"dependencies": {
+		"animejs": "^4.2.2"
+	},
+	"module": "index.ts",
+	"peerDependencies": {
+		"typescript": "^5"
+	}
+}

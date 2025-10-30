@@ -1,6 +1,10 @@
 # Ignore hidden files.
 .*
 # Include this file.
-!.gitignore
-# Include EditorConfig.
-!.editorconfig
+!/.gitignore
+# Include configuration entries.
+!/.editorconfig
+!/.env
+# Exclude node modules.
+node_modules/
+src/
