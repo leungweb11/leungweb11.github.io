@@ -1,17 +1,18 @@
 {
 	"lockfileVersion": 1,
+	"configVersion": 1,
 	"workspaces": {
 		"": {
 			"name": "prj-comic",
 			"dependencies": {
-				"animejs": "^4.2.2"
+				"animejs": "latest"
 			},
 			"devDependencies": {
 				"@types/animejs": "latest",
 				"@types/bun": "latest"
 			},
 			"peerDependencies": {
-				"typescript": "^5"
+				"typescript": "latest"
 			}
 		}
 	},
@@ -23,34 +24,34 @@
 			"sha512-yWg9l1z7CAv/TKpty4/vupEh24jDGUZXv4r26StRkpUPQm04ztJaftgpto8vwdFs8SiTq6XfaPKCSI+wjzNMvQ=="
 		],
 		"@types/bun": [
-			"@types/bun@1.3.1",
+			"@types/bun@1.3.2",
 			"",
 			{
 				"dependencies": {
-					"bun-types": "1.3.1"
+					"bun-types": "1.3.2"
 				}
 			},
-			"sha512-4jNMk2/K9YJtfqwoAa28c8wK+T7nvJFOjxI4h/7sORWcypRNxBpr+TPNaCfVWq70tLCJsqoFwcf0oI0JU/fvMQ=="
+			"sha512-t15P7k5UIgHKkxwnMNkJbWlh/617rkDGEdSsDbu+qNHTaz9SKf7aC8fiIlUdD5RPpH6GEkP0cK7WlvmrEBRtWg=="
 		],
 		"@types/node": [
-			"@types/node@24.9.2",
+			"@types/node@24.10.1",
 			"",
 			{
 				"dependencies": {
 					"undici-types": "~7.16.0"
 				}
 			},
-			"sha512-uWN8YqxXxqFMX2RqGOrumsKeti4LlmIMIyV0lgut4jx7KQBcBiW6vkDtIBvHnHIquwNfJhk8v2OtmO8zXWHfPA=="
+			"sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="
 		],
 		"@types/react": [
-			"@types/react@19.2.2",
+			"@types/react@19.2.3",
 			"",
 			{
 				"dependencies": {
 					"csstype": "^3.0.2"
 				}
 			},
-			"sha512-6mDvHUFSjyT2B2yeNx2nUgMxh9LtOWvkhIU3uePn2I2oyNymUAX1NIsdgviM4CH+JSrp2D2hsMvJOkxY+0wNRA=="
+			"sha512-k5dJVszUiNr1DSe8Cs+knKR6IrqhqdhpUwzqhkS8ecQTSf3THNtbfIp/umqHMpX2bv+9dkx3fwDv/86LcSfvSg=="
 		],
 		"animejs": [
 			"animejs@4.2.2",
@@ -59,7 +60,7 @@
 			"sha512-Ys3RuvLdAeI14fsdKCQy7ytu4057QX6Bb7m4jwmfd6iKmUmLquTwk1ut0e4NtRQgCeq/s2Lv5+oMBjz6c7ZuIg=="
 		],
 		"bun-types": [
-			"bun-types@1.3.1",
+			"bun-types@1.3.2",
 			"",
 			{
 				"dependencies": {
@@ -69,7 +70,7 @@
 					"@types/react": "^19"
 				}
 			},
-			"sha512-NMrcy7smratanWJ2mMXdpatalovtxVggkj11bScuWuiOoXTiKIu2eVS1/7qbyI/4yHedtsn175n4Sm4JcdHLXw=="
+			"sha512-i/Gln4tbzKNuxP70OWhJRZz1MRfvqExowP7U6JKoI8cntFrtxg7RJK3jvz7wQW54UuvNC8tbKHHri5fy74FVqg=="
 		],
 		"csstype": [
 			"csstype@3.1.3",
