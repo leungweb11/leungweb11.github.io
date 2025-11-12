@@ -1,10 +1,16 @@
 import { animate, svg, stagger } from "animejs";
-
-animate(svg.createDrawable("path, rect"), {
-	draw: ["0 0", "0 1", "1 1"],
+// Experimental.
+animate(("path, rect, ellipse, polygon, circle"), {
+	fill: { from: "rgba(255, 255, 255, 0)" },
 	ease: "inOutQuad",
-	duration: 2000,
+	duration: 1000,
 	delay: stagger(100),
-	loop: true
 });
-console.log("hi")
+
+animate(svg.createDrawable("path, rect, ellipse, polygon, circle"), {
+	draw: ["1 1", "0 1", "0 0"],
+	ease: "inOutQuad",
+	duration: 1000,
+	delay: stagger(100),
+	reversed: true // Simultaneous effect with the colour filling animation.
+});
