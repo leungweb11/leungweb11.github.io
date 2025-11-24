@@ -1,17 +1,14 @@
 Copyright (c) 2014, The Comic Neue Project Authors (https://github.com/crozynski/comicneue).
-&nbsp;
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
 https\://openfontlicense.org
-&nbsp;
 
 \----------------------------------------------------------------------
 
 #### SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 
 \----------------------------------------------------------------------
-&nbsp;
 
 PREAMBLE
 -----------
