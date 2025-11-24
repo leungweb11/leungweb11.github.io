@@ -11,7 +11,6 @@ https\://openfontlicense.org
 #### SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 
 \----------------------------------------------------------------------
-
 &nbsp;
 
 PREAMBLE
