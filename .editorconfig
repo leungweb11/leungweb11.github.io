@@ -1,0 +1,13 @@
+root = true
+
+# Unix-style newlines.
+[*]
+end_of_line = lf
+insert_final_newline = true
+# 4 space indentation
+indent_style = tab
+indent_size = 4
+# Remove any whitespace characters preceding newline characters.
+trim_trailing_whitespace = true
+# Allow long lines.
+max_line_length = 800

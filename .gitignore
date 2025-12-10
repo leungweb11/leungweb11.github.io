@@ -1,0 +1,11 @@
+# Exclude cache folders.
+node_modules/
+experiments/
+# Avoid publishing branch worktree for gh-pages.
+dist/
+# Ignore hidden files.
+.*
+# Include configuration entries.
+!/.gitignore
+!/.editorconfig
+!/.env
