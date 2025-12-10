@@ -1,0 +1,42 @@
+/* Import icon font. */
+@font-face {
+	font-family: "Font Awesome 7";
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	/* Font Awesome Free 7.1.0. Copyright 2025 Fonticons, Inc.; licensed under SIL OFL 1.1. */
+	src: url("../fonts/fa-solid-900.woff2");
+}
+
+/* Base style. */
+[data-icon]::before {
+	display: inline-block;
+	text-rendering: auto;
+	font: normal 900 1em/1 "Font Awesome 7";
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Icons for navigation bar. */
+header nav ul li[data-icon="menu"]::before {
+	content: "\f0c9";
+}
+
+header nav ul li a[data-icon="craft"]::before {
+	content: "\f568";
+}
+
+header nav ul li a[data-icon="flower"]::before {
+	content: "\f863";
+}
+
+header nav ul li a[data-icon="food"]::before {
+	content: "\f2e7";
+}
+
+header nav ul li a[data-icon="music"]::before {
+	content: "\f001";
+}
+
+header nav ul li a[data-icon="plant"]::before {
+	content: "\f1bb";
+}

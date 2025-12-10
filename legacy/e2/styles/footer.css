@@ -1,0 +1,33 @@
+footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	/* Center items in flexbox. */
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	margin-top: 90px;
+	padding-bottom: 20px;
+	color: var(--primary-colour);
+	background-color: var(--secondary-colour);
+}
+
+footer nav ul li {
+	/* Position spacing. */
+	margin: 20px 10px 20px 10px;
+}
+
+footer > span {
+	/* Centering text. */
+	left: 50%;
+	transform: translate(-50%, 0);
+	position: relative;
+	display: inherit;
+	flex-wrap: inherit;
+	justify-content: center;
+	text-align: center;
+	font-size: 10px;
+	max-width: 400px;
+	line-height: 1.7;
+}

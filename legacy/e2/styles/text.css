@@ -1,0 +1,11 @@
+p {
+	/* Centering text. */
+	left: 50%;
+	transform: translate(-50%, 0);
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 75%;
+	max-width: 750px;
+}

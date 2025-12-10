@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Craft</title>
+		<meta name="author" content="EKHH" />
+		<meta name="description" content="This is my Craft page." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/core.css" />
+		<!-- Animations are completely optional and will only be served if the user did not opt-out. -->
+		<link
+			rel="stylesheet"
+			media="(prefers-reduced-motion: no-preference)"
+			href="styles/animate.css"
+		/>
+		<!-- Import sweetalert2. -->
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.2/dist/sweetalert2.all.min.js"
+			integrity="sha256-UDxzcGMxkwD97cSfW4OEUugnBE+zMHthTEafrkkPAyo="
+			crossorigin="anonymous"
+		></script>
+		<!-- Helper script. -->
+		<script src="scripts/helper.js"></script>
+		<!-- For users without JavaScript; must be placed last. -->
+		<noscript>
+			<link rel="stylesheet" href="styles/noscript.css" />
+		</noscript>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a
+							data-icon="craft"
+							href="index.html"
+							aria-label="Navigate to the Craft page."
+							><span>Craft</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="flower"
+							href="flower.html"
+							aria-label="Navigate to the Flower page."
+							><span>Flower</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="food"
+							href="food.html"
+							aria-label="Navigate to the Food page."
+							><span>Food</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="music"
+							href="music.html"
+							aria-label="Navigate to the Music page."
+							><span>Music</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="plant"
+							href="plant.html"
+							aria-label="Navigate to the Plant page."
+							><span>Plant</span></a
+						>
+					</li>
+					<li data-icon="menu">
+						<!-- Accessibility label. -->
+						<span class="vh">Menu</span>
+					</li>
+				</ul>
+			</nav>
+			<fieldset>
+				<legend>Theme</legend>
+				<!-- Radio buttons are grouped by name.	-->
+				<input
+					data-radio="purple"
+					type="radio"
+					name="colour theme"
+					value="Purple"
+					aria-label="Use the Purple colour theme."
+					checked="checked"
+				/>
+				<input
+					data-radio="blue"
+					type="radio"
+					name="colour theme"
+					value="Blue"
+					aria-label="Use the Blue colour theme."
+				/>
+				<input
+					data-radio="red"
+					type="radio"
+					name="colour theme"
+					value="Red"
+					aria-label="Use the Red colour theme."
+				/>
+				<input
+					data-radio="orange"
+					type="radio"
+					name="colour theme"
+					value="Orange"
+					aria-label="Use the Orange colour theme."
+				/>
+				<input
+					data-radio="green"
+					type="radio"
+					name="colour theme"
+					value="Green"
+					aria-label="Use the Green colour theme."
+				/>
+				<input
+					data-radio="grey"
+					type="radio"
+					name="colour theme"
+					value="Grey"
+					aria-label="Use the Grey colour theme."
+				/>
+			</fieldset>
+		</header>
+		<main>
+			<div class="gallery">
+				<div>
+					<img alt="An image of craft." src="static/craft/1.webp" />
+				</div>
+				<div>
+					<img alt="An image of craft." src="static/craft/2.webp" />
+				</div>
+				<div>
+					<img alt="An image of craft." src="static/craft/3.webp" />
+				</div>
+				<div>
+					<img alt="An image of craft." src="static/craft/4.webp" />
+				</div>
+				<div>
+					<img alt="An image of craft." src="static/craft/5.webp" />
+				</div>
+				<div>
+					<img alt="An image of craft." src="static/craft/6.webp" />
+				</div>
+				<div>
+					<img alt="An image of craft." src="static/craft/7.webp" />
+				</div>
+				<div>
+					<img alt="An image of craft." src="static/craft/8.webp" />
+				</div>
+			</div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+				pharetra rhoncus egestas. Aenean bibendum sem eu lorem aliquam,
+				in lacinia leo eleifend. Vestibulum et interdum dolor. Proin nec
+				pellentesque mauris. Cras eget mi sit amet enim laoreet aliquam
+				in eget odio. In tempus velit id consequat semper. Fusce nec
+				euismod nisi.
+			</p>
+			<p>
+				Class aptent taciti sociosqu ad litora torquent per conubia
+				nostra, per inceptos himenaeos. Duis vel justo neque. Quisque
+				ullamcorper vulputate nunc. Aliquam sodales mi congue magna
+				tincidunt vestibulum. Maecenas sed massa at justo scelerisque
+				sagittis. Duis quis eleifend nisl, ut pretium mauris. Morbi a
+				ipsum eu magna bibendum semper a non diam. Phasellus a eros et
+				dui commodo aliquet. Mauris enim arcu, facilisis eget felis sit
+				amet, molestie pellentesque tellus. Nullam a orci ac libero
+				pellentesque placerat. Sed pellentesque, eros at imperdiet
+				tempor, lorem eros tempus augue, ut maximus felis est ut quam.
+				Nam tempor, massa non gravida molestie, sapien ante pharetra
+				nibh, vitae dapibus elit eros vitae dolor.
+			</p>
+			<p>
+				Duis vulputate malesuada condimentum. Vestibulum justo magna,
+				rutrum vel gravida nec, dignissim gravida nulla. Sed malesuada
+				magna eu ante pellentesque, vel placerat ligula tempus. Praesent
+				luctus tempus sem, id congue erat tincidunt sed. Nam velit
+				lacus, fermentum a dolor eget, elementum maximus est. Cras
+				tincidunt, massa sit amet interdum bibendum, ex quam rhoncus
+				orci, in semper metus mauris id enim. In risus lorem, iaculis
+				non cursus ut, iaculis eget enim. Pellentesque pretium tellus
+				libero, id congue libero hendrerit ut. Morbi non nulla et nunc
+				vulputate volutpat. Fusce eget sapien fringilla, tincidunt massa
+				non, pellentesque odio. Cras urna mi, ullamcorper facilisis est
+				nec, tempus malesuada urna. Proin vitae nisl sed dui malesuada
+				egestas. Aenean interdum finibus turpis. Morbi facilisis lorem
+				et luctus efficitur. Mauris vitae velit condimentum, aliquet
+				lorem quis, ultrices ligula. Nulla hendrerit magna urna, in
+				malesuada leo semper suscipit.
+			</p>
+			<p>
+				Nullam tristique ac ipsum ut dictum. Quisque et sapien congue,
+				hendrerit mauris id, vulputate nunc. Phasellus lacus lacus,
+				mattis non sapien id, maximus consequat libero. Nunc at augue
+				porttitor, accumsan felis eget, cursus risus. Nunc dictum nisi
+				massa, at accumsan sem gravida ac. Maecenas vitae enim
+				ullamcorper est efficitur vulputate. Fusce placerat, erat sit
+				amet consectetur semper, urna arcu convallis turpis, id aliquam
+				leo lacus non turpis. Sed interdum eros et congue posuere. Nunc
+				quis massa facilisis, rhoncus dolor porttitor, venenatis felis.
+				Curabitur ultrices nunc lorem, a maximus mi eleifend eu.
+			</p>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a
+							data-icon="craft"
+							href="index.html"
+							aria-label="Navigate to the Craft page."
+							><span>Craft</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="flower"
+							href="flower.html"
+							aria-label="Navigate to the Flower page."
+							><span>Flower</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="food"
+							href="food.html"
+							aria-label="Navigate to the Food page."
+							><span>Food</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="music"
+							href="music.html"
+							aria-label="Navigate to the Music page."
+							><span>Music</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="plant"
+							href="plant.html"
+							aria-label="Navigate to the Plant page."
+							><span>Plant</span></a
+						>
+					</li>
+				</ul>
+			</nav>
+			<span
+				>Copyright &copy; 2025 EKHH. Images on this page were made
+				freely available under the Unsplash License.</span
+			>
+		</footer>
+	</body>
+</html>

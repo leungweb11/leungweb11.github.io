@@ -1,0 +1,35 @@
+/* If JavaScript is not available, hide the theme selector. */
+fieldset:has(> input[data-radio]) {
+	display: none;
+}
+
+/* Mobile menu requires JavaScript support and must be modified. */
+@media screen and (max-width: 410px) {
+
+	header nav ul li:not([data-icon="menu"]):not(.nav-active) {
+		/* Show all items. */
+		position: inherit;
+		overflow: inherit;
+		clip: inherit;
+		height: inherit;
+		width: inherit;
+		margin: 30px 20px 30px 20px;
+		padding: inherit;
+		border: inherit;
+	}
+
+	/* Remove menu label. */
+	header nav ul li a span {
+		display: none;
+	}
+
+	/* Remove spacing after icons. */
+	header nav ul li a[data-icon]:not([data-icon="menu"])::before {
+		margin-right: 0;
+	}
+
+	header nav ul li[data-icon="menu"] {
+		/* Force hide mobile menu icon. */
+		display: none;
+	}
+}

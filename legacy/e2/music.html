@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Music</title>
+		<meta name="author" content="EKHH" />
+		<meta name="description" content="This is my Music page." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/core.css" />
+		<!-- Animations are completely optional and will only be served if the user did not opt-out. -->
+		<link
+			rel="stylesheet"
+			media="(prefers-reduced-motion: no-preference)"
+			href="styles/animate.css"
+		/>
+		<!-- Import sweetalert2. -->
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.2/dist/sweetalert2.all.min.js"
+			integrity="sha256-UDxzcGMxkwD97cSfW4OEUugnBE+zMHthTEafrkkPAyo="
+			crossorigin="anonymous"
+		></script>
+		<!-- Helper script. -->
+		<script src="scripts/helper.js"></script>
+		<!-- For users without JavaScript; must be placed last. -->
+		<noscript>
+			<link rel="stylesheet" href="styles/noscript.css" />
+		</noscript>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a
+							data-icon="craft"
+							href="index.html"
+							aria-label="Navigate to the Craft page."
+							><span>Craft</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="flower"
+							href="flower.html"
+							aria-label="Navigate to the Flower page."
+							><span>Flower</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="food"
+							href="food.html"
+							aria-label="Navigate to the Food page."
+							><span>Food</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="music"
+							href="music.html"
+							aria-label="Navigate to the Music page."
+							><span>Music</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="plant"
+							href="plant.html"
+							aria-label="Navigate to the Plant page."
+							><span>Plant</span></a
+						>
+					</li>
+					<li data-icon="menu">
+						<!-- Accessibility label. -->
+						<span class="vh">Menu</span>
+					</li>
+				</ul>
+			</nav>
+			<fieldset>
+				<legend>Theme</legend>
+				<!-- Radio buttons are grouped by name.	-->
+				<input
+					data-radio="purple"
+					type="radio"
+					name="colour theme"
+					value="Purple"
+					aria-label="Use the Purple colour theme."
+					checked="checked"
+				/>
+				<input
+					data-radio="blue"
+					type="radio"
+					name="colour theme"
+					value="Blue"
+					aria-label="Use the Blue colour theme."
+				/>
+				<input
+					data-radio="red"
+					type="radio"
+					name="colour theme"
+					value="Red"
+					aria-label="Use the Red colour theme."
+				/>
+				<input
+					data-radio="orange"
+					type="radio"
+					name="colour theme"
+					value="Orange"
+					aria-label="Use the Orange colour theme."
+				/>
+				<input
+					data-radio="green"
+					type="radio"
+					name="colour theme"
+					value="Green"
+					aria-label="Use the Green colour theme."
+				/>
+				<input
+					data-radio="grey"
+					type="radio"
+					name="colour theme"
+					value="Grey"
+					aria-label="Use the Grey colour theme."
+				/>
+			</fieldset>
+		</header>
+		<main>
+			<div class="gallery">
+				<div>
+					<img
+						alt="An image of a musical device."
+						src="static/music/1.webp"
+					/>
+				</div>
+				<div>
+					<img
+						alt="An image of a musical device."
+						src="static/music/2.webp"
+					/>
+				</div>
+				<div>
+					<img
+						alt="An image of a musical device."
+						src="static/music/3.webp"
+					/>
+				</div>
+				<div>
+					<img
+						alt="An image of a musical device."
+						src="static/music/4.webp"
+					/>
+				</div>
+				<div>
+					<img
+						alt="An image of a musical device."
+						src="static/music/5.webp"
+					/>
+				</div>
+				<div>
+					<img
+						alt="An image of a musical device."
+						src="static/music/6.webp"
+					/>
+				</div>
+				<div>
+					<img
+						alt="An image of a musical device."
+						src="static/music/7.webp"
+					/>
+				</div>
+				<div>
+					<img
+						alt="An image of a musical device."
+						src="static/music/8.webp"
+					/>
+				</div>
+			</div>
+			<p>
+				Curabitur porta venenatis justo, eget ultrices nulla ullamcorper
+				nec. In eget dictum leo. Aenean laoreet, dui sit amet rhoncus
+				vestibulum, erat sapien sollicitudin mauris, sed tempor diam ex
+				sit amet justo. Nulla pharetra eros at metus porttitor, eu
+				viverra arcu convallis. Vestibulum nec tristique erat, a
+				efficitur nisl. Sed luctus blandit hendrerit. Nam suscipit
+				blandit sodales. Nulla facilisi. Cras lacinia, felis non
+				fringilla feugiat, lorem magna bibendum lorem, sed efficitur est
+				erat at nisl. Fusce ut dui sed nisi lobortis eleifend.
+				Pellentesque tristique odio imperdiet laoreet volutpat. Aenean
+				quis odio eu odio efficitur tristique vel nec sem. Vivamus ante
+				quam, fringilla in luctus a, scelerisque sed nisl.
+			</p>
+			<p>
+				Curabitur luctus magna risus, vel iaculis nisi tempor ut. Duis
+				efficitur pharetra quam, eget aliquet erat dignissim ac. Nunc
+				tortor tellus, vulputate at ullamcorper sed, luctus a enim. In
+				non suscipit massa, sed auctor orci. Lorem ipsum dolor sit amet,
+				consectetur adipiscing elit. Integer viverra orci vel purus
+				posuere egestas. Suspendisse pharetra urna consectetur nulla
+				placerat, et interdum diam convallis. Aenean efficitur in erat
+				in pretium. Nulla rutrum quam ut tempor sagittis. Pellentesque
+				in porttitor ante. Vivamus non condimentum libero, eget
+				vulputate nulla. In tempus lectus eget justo dictum vehicula.
+				Fusce eget arcu ut est fringilla euismod.
+			</p>
+			<p>
+				In ac purus bibendum, semper lorem eu, feugiat arcu. Mauris
+				blandit ante et tellus eleifend, non cursus eros vulputate.
+				Quisque condimentum tempus neque, sed placerat neque iaculis a.
+				Nunc a imperdiet nunc. Fusce ac nisl posuere, scelerisque elit
+				ac, dictum nulla. Etiam et libero et enim ullamcorper blandit
+				sit amet nec tortor. Nunc massa erat, porta eget turpis et,
+				posuere commodo dolor. Aenean sed odio varius, tincidunt metus
+				ac, interdum nibh.
+			</p>
+			<p>
+				Aliquam egestas sollicitudin justo, et varius velit vehicula a.
+				Nam at nibh vel ex rutrum porta vel in dolor. In bibendum metus
+				sem, eu iaculis justo cursus vel. Donec libero massa,
+				scelerisque eu magna a, vulputate pellentesque nunc. Vivamus
+				nisi libero, sodales consectetur nulla nec, malesuada mollis
+				lorem. Etiam pretium vulputate justo non pretium. Proin et
+				sollicitudin mauris, vitae volutpat nisl.
+			</p>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a
+							data-icon="craft"
+							href="index.html"
+							aria-label="Navigate to the Craft page."
+							><span>Craft</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="flower"
+							href="flower.html"
+							aria-label="Navigate to the Flower page."
+							><span>Flower</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="food"
+							href="food.html"
+							aria-label="Navigate to the Food page."
+							><span>Food</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="music"
+							href="music.html"
+							aria-label="Navigate to the Music page."
+							><span>Music</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="plant"
+							href="plant.html"
+							aria-label="Navigate to the Plant page."
+							><span>Plant</span></a
+						>
+					</li>
+				</ul>
+			</nav>
+			<span
+				>Copyright &copy; 2025 EKHH. Images on this page were made
+				freely available under the Unsplash License.</span
+			>
+		</footer>
+	</body>
+</html>

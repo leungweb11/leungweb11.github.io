@@ -1,0 +1,7 @@
+# Ignore hidden files.
+.*
+# Include this file.
+!/.gitignore
+# Exclude cache folders.
+node_modules/
+experiments/

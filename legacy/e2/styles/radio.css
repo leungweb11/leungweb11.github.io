@@ -1,0 +1,30 @@
+/* :has() CSS relational pseudo-class; a relatively new feature. */
+fieldset:has(> input[data-radio]) {
+	/* Theme colour. */
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	position: relative;
+	width: fit-content;
+}
+
+fieldset input[data-radio] {
+	accent-color: var(--secondary-colour);
+}
+
+fieldset:has(> input[data-radio]) {
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 450px) {
+	/* Hide original radio. */
+	header fieldset:has(> input[data-radio]) {
+		display: none;
+	}
+
+	/* Remove spacing after radio input. */
+	fieldset:has(> input[data-radio]) {
+		margin-bottom: 0;
+	}
+}

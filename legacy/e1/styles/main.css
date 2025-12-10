@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* font-weight: Extra Light (200), Light (300), Regular (400), Medium (500), SemiBold (600), Bold (700), ExtraBold (800), Black (900). */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+	font-family: "Source Code Pro", "Consolas", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", "monospace"
+}
+
+.gallery {
+	/* Centering container. */
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	width: fit-content;
+	/* Offset from normal document flow. */
+	position: relative;
+	/* Required for centering. */
+	width: 85%;
+	padding-left: 2.4%;
+	/* Flex box. */
+	display: flex;
+	/* Allow items on multiple lines. */
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.gallery div {
+	/* Required to act as a container for text positioning. */
+	/* Left padding on main container: 2.4. Right padding for items: 2.4. Width of each container: 22%. */
+	width: 22%;
+	padding-right: 2.4%;
+	position: relative;
+}
+
+.gallery div img {
+	width: 100%;
+	filter: blur(4px) brightness(0.5) saturate(0);
+	margin: 10px;
+	transition: filter 0.5s ease;
+	/* Resize images. */
+	aspect-ratio: 1 / 1.8;
+}
+
+.gallery div img:hover {
+	filter: blur(0) brightness(1) saturate(1);
+	transition: filter 0.5s ease;
+}
+
+.gallery div p {
+	text-transform: uppercase;
+	opacity: inherit;
+	color: white;
+	/* Container image obscure view. */
+	z-index: 1;
+	/* Combine vertical and horizontal centering. */
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	/* Leave no space behind. */
+	position: absolute;
+	width: fit-content;
+}
+
+h2, p {
+	padding-right: 20%;
+	padding-left: 20%;
+	left: 50%;
+	text-align: left;
+	transform: translate(-50%, 0);
+	/* Leave no space behind. */
+	position: relative;
+	width: fit-content;
+}
+
+nav {
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	width: fit-content;
+	/* Offset from normal document flow. */
+	position: relative;
+}
+
+nav h1 {
+	margin: 10px;
+	font-weight: 500;
+}
+
+nav ul {
+	background-color: grey;
+	border-radius: 20px;
+	/* Flexbox display allows horizontal grouping. */
+	display: flex;
+}
+
+nav ul li {
+	color: white;
+	border-radius: inherit;
+	/* Use padding instead of margin to create space within defined border. */
+	padding: 10px 20px 10px 20px;
+	/* Prepare for border on hover. */
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+}
+
+nav ul li:hover {
+	color: white;
+	background-color: rgb(68, 68, 68);
+	border-color: transparent;
+}
+
+#current_page {
+	color: black;
+	background-color: white;
+	border-color: grey;
+}
+
+p::selection {
+	/* Selection colour. */
+  background-color: rgb(210, 210, 210);
+}

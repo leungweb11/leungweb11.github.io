@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Plant</title>
+		<meta name="author" content="EKHH" />
+		<meta name="description" content="This is my Plant page." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/core.css" />
+		<!-- Animations are completely optional and will only be served if the user did not opt-out. -->
+		<link
+			rel="stylesheet"
+			media="(prefers-reduced-motion: no-preference)"
+			href="styles/animate.css"
+		/>
+		<!-- Import sweetalert2. -->
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.2/dist/sweetalert2.all.min.js"
+			integrity="sha256-UDxzcGMxkwD97cSfW4OEUugnBE+zMHthTEafrkkPAyo="
+			crossorigin="anonymous"
+		></script>
+		<!-- Helper script. -->
+		<script src="scripts/helper.js"></script>
+		<!-- For users without JavaScript; must be placed last. -->
+		<noscript>
+			<link rel="stylesheet" href="styles/noscript.css" />
+		</noscript>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a
+							data-icon="craft"
+							href="index.html"
+							aria-label="Navigate to the Craft page."
+							><span>Craft</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="flower"
+							href="flower.html"
+							aria-label="Navigate to the Flower page."
+							><span>Flower</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="food"
+							href="food.html"
+							aria-label="Navigate to the Food page."
+							><span>Food</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="music"
+							href="music.html"
+							aria-label="Navigate to the Music page."
+							><span>Music</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="plant"
+							href="plant.html"
+							aria-label="Navigate to the Plant page."
+							><span>Plant</span></a
+						>
+					</li>
+					<li data-icon="menu">
+						<!-- Accessibility label. -->
+						<span class="vh">Menu</span>
+					</li>
+				</ul>
+			</nav>
+			<fieldset>
+				<legend>Theme</legend>
+				<!-- Radio buttons are grouped by name.	-->
+				<input
+					data-radio="purple"
+					type="radio"
+					name="colour theme"
+					value="Purple"
+					aria-label="Use the Purple colour theme."
+					checked="checked"
+				/>
+				<input
+					data-radio="blue"
+					type="radio"
+					name="colour theme"
+					value="Blue"
+					aria-label="Use the Blue colour theme."
+				/>
+				<input
+					data-radio="red"
+					type="radio"
+					name="colour theme"
+					value="Red"
+					aria-label="Use the Red colour theme."
+				/>
+				<input
+					data-radio="orange"
+					type="radio"
+					name="colour theme"
+					value="Orange"
+					aria-label="Use the Orange colour theme."
+				/>
+				<input
+					data-radio="green"
+					type="radio"
+					name="colour theme"
+					value="Green"
+					aria-label="Use the Green colour theme."
+				/>
+				<input
+					data-radio="grey"
+					type="radio"
+					name="colour theme"
+					value="Grey"
+					aria-label="Use the Grey colour theme."
+				/>
+			</fieldset>
+		</header>
+		<main>
+			<div class="gallery">
+				<div>
+					<img alt="An image of a plant." src="static/plant/1.webp" />
+				</div>
+				<div>
+					<img alt="An image of a plant." src="static/plant/2.webp" />
+				</div>
+				<div>
+					<img alt="An image of a plant." src="static/plant/3.webp" />
+				</div>
+				<div>
+					<img alt="An image of a plant." src="static/plant/4.webp" />
+				</div>
+				<div>
+					<img alt="An image of a plant." src="static/plant/5.webp" />
+				</div>
+				<div>
+					<img alt="An image of a plant." src="static/plant/6.webp" />
+				</div>
+				<div>
+					<img alt="An image of a plant." src="static/plant/7.webp" />
+				</div>
+				<div>
+					<img alt="An image of a plant." src="static/plant/8.webp" />
+				</div>
+			</div>
+			<p>
+				Suspendisse potenti. Cras id nunc in risus facilisis venenatis.
+				Praesent bibendum est arcu, a mollis lorem porta quis. Curabitur
+				sollicitudin neque eget mi mollis, id pretium purus malesuada.
+				Sed malesuada ac erat ac euismod. Cras bibendum libero at tortor
+				congue dapibus. Duis urna libero, pretium sagittis facilisis sit
+				amet, fringilla non tortor. In non mauris dolor. Nam pharetra
+				venenatis odio at imperdiet.
+			</p>
+			<p>
+				Aliquam erat volutpat. Ut dolor lacus, eleifend eget eros quis,
+				iaculis fermentum urna. Morbi quis lacinia mauris. Aliquam erat
+				volutpat. Nulla suscipit tellus vel metus egestas, eget dictum
+				libero hendrerit. Lorem ipsum dolor sit amet, consectetur
+				adipiscing elit. Ut felis quam, dignissim at lorem ut, tincidunt
+				ultrices libero. Quisque quam erat, rhoncus id odio sit amet,
+				dapibus luctus enim. Mauris ut enim sit amet turpis condimentum
+				auctor. Integer accumsan laoreet urna, ut hendrerit est
+				elementum sit amet. Fusce id libero diam.
+			</p>
+			<p>
+				Nam sit amet porta elit, at vestibulum ante. Sed faucibus sem
+				quis nunc rhoncus, sed mollis nisi viverra. Nulla in nibh eu
+				nunc posuere gravida. Maecenas placerat vehicula nisl, quis
+				eleifend massa interdum venenatis. Phasellus tincidunt mauris in
+				ornare dictum. Morbi ut ligula magna. Pellentesque malesuada
+				enim a nulla sodales feugiat. Aenean vel dictum velit. Etiam
+				rutrum, enim sed luctus volutpat, dolor nulla feugiat ex,
+				volutpat aliquet velit ipsum sed ex. Quisque ut pharetra sem.
+			</p>
+			<p>
+				Curabitur porta ante in elit elementum, et faucibus metus
+				sagittis. Fusce ex augue, rhoncus sed convallis nec, imperdiet
+				quis erat. Morbi iaculis massa vitae sem efficitur sollicitudin.
+				Donec quis lobortis erat. Proin blandit dictum dictum.
+				Vestibulum elementum sapien orci, in convallis felis volutpat
+				sed. Maecenas at nisi vel orci scelerisque tincidunt. Ut porta
+				ante quam, eu viverra arcu consectetur a. Maecenas blandit velit
+				sapien, sed dictum arcu ultricies non. Phasellus nec tortor et
+				tortor hendrerit volutpat vitae consequat arcu.
+			</p>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a
+							data-icon="craft"
+							href="index.html"
+							aria-label="Navigate to the Craft page."
+							><span>Craft</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="flower"
+							href="flower.html"
+							aria-label="Navigate to the Flower page."
+							><span>Flower</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="food"
+							href="food.html"
+							aria-label="Navigate to the Food page."
+							><span>Food</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="music"
+							href="music.html"
+							aria-label="Navigate to the Music page."
+							><span>Music</span></a
+						>
+					</li>
+					<li>
+						<a
+							data-icon="plant"
+							href="plant.html"
+							aria-label="Navigate to the Plant page."
+							><span>Plant</span></a
+						>
+					</li>
+				</ul>
+			</nav>
+			<span
+				>Copyright &copy; 2025 EKHH. Images on this page were made
+				freely available under the Unsplash License.</span
+			>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+.gallery {
+	/* Centering container. */
+	left: 50%;
+	transform: translate(-50%, 0);
+	/* Offset from normal document flow. */
+	position: relative;
+	/* Flex box. */
+	display: flex;
+	/* Allow items on multiple lines. */
+	flex-wrap: wrap;
+	/* Centering container items. */
+	justify-content: center;
+	/* Total width. */
+	width: 90%;
+	/* Spacing between gallery and text. */
+	margin-bottom: 60px;
+}
+
+.gallery div {
+	/* Required to act as a container for text positioning. */
+	width: 200px;
+	padding-right: 20px;
+	position: relative;
+}
+
+.gallery div img {
+	width: 100%;
+	filter: blur(4px) brightness(0.5) saturate(0);
+	margin: 10px;
+	transition: filter 0.5s ease;
+	/* Resize images. */
+	aspect-ratio: 3.5 / 5;
+}
+
+.gallery div img:hover {
+	filter: blur(0) brightness(1) saturate(1);
+	transition: filter 0.5s ease;
+}
+
+.gallery div img:hover {
+	filter: blur(0) brightness(1) saturate(1);
+	transition: filter 0.5s ease;
+}
+
+.gallery div p {
+	text-transform: uppercase;
+	opacity: inherit;
+	color: white;
+	/* Container image obscure view. */
+	z-index: 1;
+	/* Combine vertical and horizontal centering. */
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	/* Leave no space behind. */
+	position: absolute;
+	width: fit-content;
+}
+
+@media screen and (max-width: 995px) and (min-width: 451px) {
+	.gallery {
+		/* Lower container width. */
+		width: 75%;
+	}
+
+	.gallery div {
+		/* Width of items within gallery. */
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.gallery {
+		/* Full container width. */
+		width: 100%;
+	}
+}

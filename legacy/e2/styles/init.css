@@ -1,0 +1,31 @@
+/* font-weight: Extra Light (200), Light (300), Regular (400), Medium (500), SemiBold (600), Bold (700), ExtraBold (800), Black (900). */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+	--primary-colour: var(--purple-primary-colour);
+	--secondary-colour: var(--purple-secondary-colour);
+	--purple-primary-colour: #3c0096;
+	--purple-secondary-colour: #ceaffc;
+	--blue-primary-colour: #113a54;
+	--blue-secondary-colour: #b5d8f0;
+	--red-primary-colour: #6e273f;
+	--red-secondary-colour: #ff9aa6;
+	--orange-primary-colour: #783e14;
+	--orange-secondary-colour: #ffd8a9;
+	--green-primary-colour: #2a5031;
+	--green-secondary-colour: #c4e3cf;
+	--grey-primary-colour: #37353e;
+	--grey-secondary-colour: #dedede;
+}
+
+::selection {
+	background-color: var(--secondary-colour);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Source Code Pro", "Consolas", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", "monospace";
+}
