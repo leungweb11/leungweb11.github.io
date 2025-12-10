@@ -1,0 +1,54 @@
+nav {
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	/* Offset from normal document flow. Required for flexbox display. */
+	position: relative;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	/* Center items in flexbox. */
+	justify-content: center;
+	/* Disable text selection. */
+	user-select: none;
+}
+
+nav ul li {
+	border-radius: 10px;
+	padding: 20px 10px 20px 10px;
+}
+
+nav ul li:nth-child(1) {
+	background-color: #ef9a9a;
+}
+
+nav ul li:nth-child(2) {
+	background-color: #ef9a9a;
+}
+
+nav ul li:nth-child(3) {
+	background-color: #a5d6a7;
+}
+
+nav ul li:nth-child(4) {
+	background-color: #a5d6a7;
+}
+
+nav ul li:nth-child(5) {
+	background-color: #a5d6a7;
+}
+
+nav ul li:nth-child(6) {
+	background-color: #90caf9;
+}
+
+nav ul li:nth-child(7) {
+	background-color: #90caf9;
+}
+
+nav ul li:nth-child(8) {
+	background-color: #90caf9;
+}
