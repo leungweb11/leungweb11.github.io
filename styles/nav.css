@@ -1,54 +1,76 @@
+:root {
+	/* Modified from pattern by Petar Gyurov; public domain. See https://github.com/petargyurov/virtual-bookshelf. */
+	--pattern-tartan:
+		repeating-linear-gradient(transparent, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 53%, transparent 53%, transparent 63%, rgba(0, 0, 0, 0.4) 63%, rgba(0, 0, 0, 0.4) 66%, transparent 66%, transparent 50%, rgba(0, 0, 0, 0.3) 116%, rgba(0, 0, 0, 0.3) 166%, rgba(255, 255, 255, 0.2) 166%, rgba(255, 255, 255, 0.2) 169%, rgba(0, 0, 0, 0.3) 169%, rgba(0, 0, 0, 0.3) 179%, rgba(255, 255, 255, 0.2) 179%, rgba(255, 255, 255, 0.2) 182%, rgba(0, 0, 0, 0.3) 182%, rgba(0, 0, 0, 0.3) 232%, transparent 50%),
+		repeating-linear-gradient(270deg, transparent, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 53%, transparent 53%, transparent 63%, rgba(0, 0, 0, 0.4) 63%, rgba(0, 0, 0, 0.4) 66%, transparent 66%, transparent 116%, rgba(0, 0, 0, 0.3) 116%, rgba(0, 0, 0, 0.3) 166%, rgba(255, 255, 255, 0.2) 166%, rgba(255, 255, 255, 0.2) 169%, rgba(0, 0, 0, 0.3) 169%, rgba(0, 0, 0, 0.3) 179%, rgba(255, 255, 255, 0.2) 179%, rgba(255, 255, 255, 0.2) 182%, rgba(0, 0, 0, 0.3) 182%, rgba(0, 0, 0, 0.3) 232%, transparent 50%), repeating-linear-gradient(125deg, transparent, transparent 2%, rgba(0, 0, 0, 0.2) 2%, rgba(0, 0, 0, 0.2) 3%, transparent 3%, transparent 5%, rgba(0, 0, 0, 0.2) 5%);
+}
+
+header {
+	height: 20%;
+	max-height: 200px;
+	display: flex;
+	justify-content: center;
+}
+
 nav {
-	left: 50%;
-	width: 100%;
-	transform: translate(-50%, 0);
-	text-align: center;
-	/* Offset from normal document flow. Required for flexbox display. */
-	position: relative;
+	display: inherit;
+	user-select: none; /* Disable text selection. */
 }
 
 nav ul {
-	display: flex;
-	flex-wrap: wrap;
-	/* Center items in flexbox. */
-	justify-content: center;
-	/* Disable text selection. */
-	user-select: none;
+	display: inherit;
+	gap: 10px;
 }
 
 nav ul li {
-	border-radius: 10px;
-	padding: 20px 10px 20px 10px;
+	display: inherit;
+	border-radius: 3px;
+	aspect-ratio: 1 / 4;
+}
+
+nav ul li a {
+	display: inherit;
+	padding: 100%;
+	align-items: stretch; /* Expand to container size. */
 }
 
 nav ul li:nth-child(1) {
-	background-color: #ef9a9a;
+	background-color: #a52a2a;
+	background-image: var(--pattern-tartan);
 }
 
 nav ul li:nth-child(2) {
-	background-color: #ef9a9a;
+	background-color: #8b4513;
+	background-image: var(--pattern-tartan);
 }
 
 nav ul li:nth-child(3) {
-	background-color: #a5d6a7;
+	background-color: #556b2f;
+	background-image: var(--pattern-tartan);
 }
 
 nav ul li:nth-child(4) {
-	background-color: #a5d6a7;
+	background-color: #194570;
+	background-image: var(--pattern-tartan);
 }
 
 nav ul li:nth-child(5) {
-	background-color: #a5d6a7;
+	background-color: #a52a2a;
+	background-image: var(--pattern-tartan);
 }
 
 nav ul li:nth-child(6) {
-	background-color: #90caf9;
+	background-color: #556b2f;
+	background-image: var(--pattern-tartan);
 }
 
 nav ul li:nth-child(7) {
-	background-color: #90caf9;
+	background-color: #8b4513;
+	background-image: var(--pattern-tartan);
 }
 
 nav ul li:nth-child(8) {
-	background-color: #90caf9;
+	background-color: #194570;
+	background-image: var(--pattern-tartan);
+	margin-right: 0px;
 }
