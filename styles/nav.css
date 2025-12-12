@@ -1,8 +1,8 @@
 :root {
 	/* Modified from pattern by Petar Gyurov; public domain. See https://github.com/petargyurov/virtual-bookshelf. */
 	--pattern-tartan:
-		repeating-linear-gradient(transparent, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 53%, transparent 53%, transparent 63%, rgba(0, 0, 0, 0.4) 63%, rgba(0, 0, 0, 0.4) 66%, transparent 66%, transparent 50%, rgba(0, 0, 0, 0.3) 116%, rgba(0, 0, 0, 0.3) 166%, rgba(255, 255, 255, 0.2) 166%, rgba(255, 255, 255, 0.2) 169%, rgba(0, 0, 0, 0.3) 169%, rgba(0, 0, 0, 0.3) 179%, rgba(255, 255, 255, 0.2) 179%, rgba(255, 255, 255, 0.2) 182%, rgba(0, 0, 0, 0.3) 182%, rgba(0, 0, 0, 0.3) 232%, transparent 50%),
-		repeating-linear-gradient(270deg, transparent, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 53%, transparent 53%, transparent 63%, rgba(0, 0, 0, 0.4) 63%, rgba(0, 0, 0, 0.4) 66%, transparent 66%, transparent 116%, rgba(0, 0, 0, 0.3) 116%, rgba(0, 0, 0, 0.3) 166%, rgba(255, 255, 255, 0.2) 166%, rgba(255, 255, 255, 0.2) 169%, rgba(0, 0, 0, 0.3) 169%, rgba(0, 0, 0, 0.3) 179%, rgba(255, 255, 255, 0.2) 179%, rgba(255, 255, 255, 0.2) 182%, rgba(0, 0, 0, 0.3) 182%, rgba(0, 0, 0, 0.3) 232%, transparent 50%), repeating-linear-gradient(125deg, transparent, transparent 2%, rgba(0, 0, 0, 0.2) 2%, rgba(0, 0, 0, 0.2) 3%, transparent 3%, transparent 5%, rgba(0, 0, 0, 0.2) 5%);
+		repeating-linear-gradient(transparent, transparent 25%, rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4) 26.5%, transparent 26.5%, transparent 31.5%, rgba(0, 0, 0, 0.4) 31.5%, rgba(0, 0, 0, 0.4) 33%, transparent 33%, transparent 58%, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 0.5) 58%, rgba(255, 255, 255, 0.2) 58%, rgba(255, 255, 255, 0.2) 84.5%, rgba(0, 0, 0, 0.5) 84.5%, rgba(0, 0, 0, 0.5) 89.5%, rgba(255, 255, 255, 0.2) 89.5%, rgba(255, 255, 255, 0.2) 91%, rgba(0, 0, 0, 0.5) 91%, rgba(0, 0, 0, 0.5) 100%, transparent 100%),
+		repeating-linear-gradient(270deg, transparent, transparent 25%, rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4) 26.5%, transparent 26.5%, transparent 31.5%, rgba(0, 0, 0, 0.4) 31.5%, rgba(0, 0, 0, 0.4) 33%, transparent 33%, transparent 58%, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 0.5) 58%, rgba(255, 255, 255, 0.2) 58%, rgba(255, 255, 255, 0.2) 84.5%, rgba(0, 0, 0, 0.5) 84.5%, rgba(0, 0, 0, 0.5) 89.5%, rgba(255, 255, 255, 0.2) 89.5%, rgba(255, 255, 255, 0.2) 91%, rgba(0, 0, 0, 0.5) 91%, rgba(0, 0, 0, 0.5) 100%, transparent 100%), repeating-linear-gradient(125deg, transparent, transparent 1%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0.2) 1.5%, transparent 1.5%, transparent 2.5%, rgba(0, 0, 0, 0.2) 2.5%);
 }
 
 header {
@@ -30,7 +30,6 @@ nav ul li {
 
 nav ul li a {
 	display: inherit;
-	padding: 100%;
 	align-items: stretch; /* Expand to container size. */
 }
 
@@ -42,35 +41,42 @@ nav ul li:nth-child(1) {
 nav ul li:nth-child(2) {
 	background-color: #8b4513;
 	background-image: var(--pattern-tartan);
+	margin-top: 2%;
 }
 
 nav ul li:nth-child(3) {
 	background-color: #556b2f;
 	background-image: var(--pattern-tartan);
+	margin-top: 4%;
 }
 
 nav ul li:nth-child(4) {
 	background-color: #194570;
 	background-image: var(--pattern-tartan);
+	margin-top: 6%;
 }
 
 nav ul li:nth-child(5) {
 	background-color: #a52a2a;
 	background-image: var(--pattern-tartan);
+	margin-top: 8%;
 }
 
 nav ul li:nth-child(6) {
 	background-color: #556b2f;
 	background-image: var(--pattern-tartan);
+	margin-top: 10%;
 }
 
 nav ul li:nth-child(7) {
 	background-color: #8b4513;
 	background-image: var(--pattern-tartan);
+	margin-top: 12%;
 }
 
 nav ul li:nth-child(8) {
 	background-color: #194570;
 	background-image: var(--pattern-tartan);
 	margin-right: 0px;
+	margin-top: 14%;
 }
