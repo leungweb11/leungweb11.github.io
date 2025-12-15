@@ -1,31 +1,32 @@
-:root {
-	/* Modified from pattern by Petar Gyurov; public domain. See https://github.com/petargyurov/virtual-bookshelf. */
-	--pattern-tartan:
-		repeating-linear-gradient(transparent, transparent 25%, rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4) 26.5%, transparent 26.5%, transparent 31.5%, rgba(0, 0, 0, 0.4) 31.5%, rgba(0, 0, 0, 0.4) 33%, transparent 33%, transparent 58%, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 0.5) 58%, rgba(255, 255, 255, 0.2) 58%, rgba(255, 255, 255, 0.2) 84.5%, rgba(0, 0, 0, 0.5) 84.5%, rgba(0, 0, 0, 0.5) 89.5%, rgba(255, 255, 255, 0.2) 89.5%, rgba(255, 255, 255, 0.2) 91%, rgba(0, 0, 0, 0.5) 91%, rgba(0, 0, 0, 0.5) 100%, transparent 100%),
-		repeating-linear-gradient(270deg, transparent, transparent 25%, rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4) 26.5%, transparent 26.5%, transparent 31.5%, rgba(0, 0, 0, 0.4) 31.5%, rgba(0, 0, 0, 0.4) 33%, transparent 33%, transparent 58%, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 0.5) 58%, rgba(255, 255, 255, 0.2) 58%, rgba(255, 255, 255, 0.2) 84.5%, rgba(0, 0, 0, 0.5) 84.5%, rgba(0, 0, 0, 0.5) 89.5%, rgba(255, 255, 255, 0.2) 89.5%, rgba(255, 255, 255, 0.2) 91%, rgba(0, 0, 0, 0.5) 91%, rgba(0, 0, 0, 0.5) 100%, transparent 100%), repeating-linear-gradient(125deg, transparent, transparent 1%, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0.2) 1.5%, transparent 1.5%, transparent 2.5%, rgba(0, 0, 0, 0.2) 2.5%);
-}
-
 header {
-	height: 20%;
+	margin-top: 2%;
+	height: 10%;
+	min-height: 50px;
 	max-height: 200px;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 }
 
 nav {
+	width: inherit;
 	display: inherit;
 	user-select: none; /* Disable text selection. */
 }
 
 nav ul {
+	gap: 5px;
+	width: inherit;
 	display: inherit;
-	gap: 10px;
+	justify-content: center;
 }
 
 nav ul li {
 	display: inherit;
 	border-radius: 3px;
-	aspect-ratio: 1 / 4;
+	width: 5%;
+	max-height: 100%;
+	max-width: 40px;
 }
 
 nav ul li a {
@@ -35,48 +36,32 @@ nav ul li a {
 
 nav ul li:nth-child(1) {
 	background-color: #a52a2a;
-	background-image: var(--pattern-tartan);
 }
 
 nav ul li:nth-child(2) {
 	background-color: #8b4513;
-	background-image: var(--pattern-tartan);
-	margin-top: 2%;
 }
 
 nav ul li:nth-child(3) {
 	background-color: #556b2f;
-	background-image: var(--pattern-tartan);
-	margin-top: 4%;
 }
 
 nav ul li:nth-child(4) {
 	background-color: #194570;
-	background-image: var(--pattern-tartan);
-	margin-top: 6%;
 }
 
 nav ul li:nth-child(5) {
 	background-color: #a52a2a;
-	background-image: var(--pattern-tartan);
-	margin-top: 8%;
 }
 
 nav ul li:nth-child(6) {
 	background-color: #556b2f;
-	background-image: var(--pattern-tartan);
-	margin-top: 10%;
 }
 
 nav ul li:nth-child(7) {
 	background-color: #8b4513;
-	background-image: var(--pattern-tartan);
-	margin-top: 12%;
 }
 
 nav ul li:nth-child(8) {
 	background-color: #194570;
-	background-image: var(--pattern-tartan);
-	margin-right: 0px;
-	margin-top: 14%;
 }
