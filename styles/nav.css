@@ -1,11 +1,10 @@
 header {
 	margin-top: 2%;
 	height: 10%;
-	min-height: 50px;
+	min-height: 100px;
 	max-height: 200px;
 	width: 100%;
 	display: flex;
-	justify-content: center;
 }
 
 nav {
@@ -26,42 +25,48 @@ nav ul li {
 	border-radius: 3px;
 	width: 5%;
 	max-height: 100%;
-	max-width: 40px;
+	max-width: 32px;
+	min-width: 24px;
 }
 
 nav ul li a {
 	display: inherit;
+	width: 100%;
 	align-items: stretch; /* Expand to container size. */
+	border-left: 4px solid rgb(60, 60, 60, 0.4); /* Shadow effect. */
+	align-items: center;
+	justify-content: center;
+	color: #fae3af; /* Font only. */
 }
 
 nav ul li:nth-child(1) {
-	background-color: #a52a2a;
+	background: var(--book-tan);
 }
 
 nav ul li:nth-child(2) {
-	background-color: #8b4513;
+	background: var(--book-tan);
 }
 
 nav ul li:nth-child(3) {
-	background-color: #556b2f;
+	background: var(--book-salmon);
 }
 
 nav ul li:nth-child(4) {
-	background-color: #194570;
+	background: var(--book-salmon);
 }
 
 nav ul li:nth-child(5) {
-	background-color: #a52a2a;
+	background: var(--book-salmon);
 }
 
 nav ul li:nth-child(6) {
-	background-color: #556b2f;
+	background: var(--book-grey);
 }
 
 nav ul li:nth-child(7) {
-	background-color: #8b4513;
+	background: var(--book-grey);
 }
 
 nav ul li:nth-child(8) {
-	background-color: #194570;
+	background: var(--book-grey);
 }

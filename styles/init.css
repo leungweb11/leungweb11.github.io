@@ -1,0 +1,9 @@
+:root {
+	--book-tan: linear-gradient(to bottom, #9b8273 10%, #ffd782 10%, #ffd782 20%, #9b8273 20%, #9b8273 80%, #ffd782 80%, #ffd782 90%, #9b8273 90%);
+	--book-salmon: linear-gradient(to bottom, #b9785f 10%, #ffd782 10%, #ffd782 20%, #b9785f 20%, #b9785f 80%, #ffd782 80%, #ffd782 90%, #b9785f 90%);
+	--book-grey: linear-gradient(to bottom, #707487 10%, #ffd782 10%, #ffd782 20%, #707487 20%, #707487 80%, #ffd782 80%, #ffd782 90%, #707487 90%);
+}
+
+html {
+	font-family: "ComicNeue-Regular", sans-serif;
+}

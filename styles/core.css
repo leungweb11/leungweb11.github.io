@@ -1,3 +1,6 @@
 @import "reset.css";
+@import "init.css";
 @import "font.css";
 @import "nav.css";
+@import "art.css";
+@import "responsive.css";
