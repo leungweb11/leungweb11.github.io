@@ -1,5 +1,5 @@
 @media screen and (max-width: 500px) {
-	svg {
+	main {
 		min-width: 90%;
 	}
 }
@@ -8,7 +8,7 @@
 	nav ul li {
 		min-width: 20px;
 	}
-	svg {
+	main {
 		min-width: 95%;
 	}
 }

@@ -1,9 +1,11 @@
 const svg = document.getElementsByTagName("svg");
 let pg_display = <HTMLInputElement>document.getElementById("pg_display");
 
-function hideAll() {
+function hideAll(exclude?: number) {
 	for (let i = 0; i < svg.length; i++) {
-		svg[i]?.setAttribute("display", "none");
+		if (i !== exclude) {
+			svg[i]?.setAttribute("display", "none");
+		}
 	}
 }
 
@@ -18,27 +20,30 @@ pg_display.setAttribute("max", String(svg.length));
 
 // Programmatic interface; page numeral starts from zero.
 function updatePage(pg_numeral = 0) {
-	// if (pg_display) {
-	// 	let pg_numeral = parseInt(pg_display.value) - 1 || 0; // Start from index zero.
-	// 	if (svg.length > pg_numeral) {
-	// 		svg[pg_numeral]?.setAttribute("display", "none");
-	// 		pg_numeral++; // One for index.
-	// 		svg[pg_numeral]?.setAttribute("display", "inline");
-	// 		pg_numeral++; // Another for display.
-	// 		pg_display.value = String(pg_numeral); // Add one.
-	// 	} else {
-	// 		console.error("Test.");
-	// 	}
-	// }
 	if (pg_display) {
-		hideAll();
-		svg[pg_numeral]?.setAttribute("display", "inline");
+		hideAll(pg_numeral);
+		if (svg.length > pg_numeral) {
+			svg[pg_numeral]?.setAttribute("display", "inline");
+		}
 	}
 }
 
 // Update page on page change.
 pg_display.addEventListener("change", () => {
-	updatePage();
+	let pg_numeral = parseInt(pg_display.value) - 1 || 0; // Start from index zero.
+	if (svg.length <= pg_numeral) {
+		console.warn("Input exceeds total page numeral; navigating to the last page.");
+		pg_numeral = svg.length - 1; // Input too large; navigate to the last page.
+		pg_display.value = String(pg_numeral + 1);
+	} else if (svg.length - pg_numeral > svg.length) {
+		console.warn("Input is invalid; navigating to the first page.");
+		pg_numeral = 0;
+		pg_display.value = String(pg_numeral + 1);
+	}
+	updatePage(pg_numeral);
 });
+
+hideAll();
+updatePage();
 
 export { pg_display };
