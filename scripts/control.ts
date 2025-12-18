@@ -1,16 +1,44 @@
-function next() {
-	const svg = document.getElementsByTagName("svg");
-	const pg_display = document.getElementById("page_number");
-	if (pg_display) {
-		let pg_number = parseInt(pg_display.innerText);
-		if (svg.length < pg_number) {
-			svg[pg_number]?.setAttribute("display", "none");
-			pg_number = 1 + pg_number;
-			pg_display.innerText = String(pg_number); // Add one.
-		} else {
-			console.error("Test.");
-		}
+const svg = document.getElementsByTagName("svg");
+let pg_display = <HTMLInputElement>document.getElementById("pg_display");
+
+function hideAll() {
+	for (let i = 0; i < svg.length; i++) {
+		svg[i]?.setAttribute("display", "none");
 	}
 }
 
-next();
+if (!pg_display) {
+	console.error("Could not find display element for tracking page numeral; creating hidden input.");
+	pg_display = document.createElement("input");
+	pg_display.setAttribute("display", "none");
+}
+
+pg_display.setAttribute("min", "1");
+pg_display.setAttribute("max", String(svg.length));
+
+// Programmatic interface; page numeral starts from zero.
+function updatePage(pg_numeral = 0) {
+	// if (pg_display) {
+	// 	let pg_numeral = parseInt(pg_display.value) - 1 || 0; // Start from index zero.
+	// 	if (svg.length > pg_numeral) {
+	// 		svg[pg_numeral]?.setAttribute("display", "none");
+	// 		pg_numeral++; // One for index.
+	// 		svg[pg_numeral]?.setAttribute("display", "inline");
+	// 		pg_numeral++; // Another for display.
+	// 		pg_display.value = String(pg_numeral); // Add one.
+	// 	} else {
+	// 		console.error("Test.");
+	// 	}
+	// }
+	if (pg_display) {
+		hideAll();
+		svg[pg_numeral]?.setAttribute("display", "inline");
+	}
+}
+
+// Update page on page change.
+pg_display.addEventListener("change", () => {
+	updatePage();
+});
+
+export { pg_display };
