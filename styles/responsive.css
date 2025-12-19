@@ -1,14 +1,17 @@
 @media screen and (max-width: 500px) {
-	main {
-		min-width: 90%;
+	svg {
+		min-width: 90% !important;
 	}
 }
 
 @media screen and (max-width: 256px) {
 	nav ul li {
-		min-width: 20px;
+		min-width: 10% !important;
 	}
-	main {
-		min-width: 95%;
+	header {
+		min-height: 20% !important;
+	}
+	svg {
+		min-width: 95% !important;
 	}
 }

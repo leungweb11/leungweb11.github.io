@@ -1,5 +1,4 @@
 import { animate, svg } from "animejs";
-import { pg_display } from "./control.ts";
 
 const animation = [
 	// Animate fill parameters.
@@ -29,9 +28,16 @@ const animation = [
 	}),
 ];
 
-// Update animation on page change.
-pg_display.addEventListener("change", () => {
+export async function eraseArt() {
+	const finished = [animation[0]?.reverse()];
+	for (let i = 1; i < animation.length; i++) {
+		finished.push(animation[i]?.reverse());
+	}
+	return finished; // Return the result of all animation; used to introduce delay before skipping pages.
+}
+
+export function refreshAnimation() {
 	for (let i = 0; i < animation.length; i++) {
 		animation[i]?.refresh().restart();
 	}
-});
+}
