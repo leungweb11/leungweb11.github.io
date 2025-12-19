@@ -7,6 +7,7 @@ main {
 main > svg {
 	width: 50%;
 	min-width: 500px;
+	max-width: 1000px;
 	aspect-ratio: 1/1;
 	border: 2px solid grey;
 	margin-top: 2%;
