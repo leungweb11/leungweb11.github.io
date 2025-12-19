@@ -32,6 +32,7 @@ nav ul li {
 nav ul li a {
 	display: inherit;
 	width: 100%;
+	aspect-ratio: 1/4;
 	align-items: stretch; /* Expand to container size. */
 	border-left: 4px solid rgb(60, 60, 60, 0.4); /* Shadow effect. */
 	align-items: center;
