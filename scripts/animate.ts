@@ -1,4 +1,4 @@
-import { animate, svg } from "animejs";
+import { animate, engine, svg, utils } from "animejs";
 
 const animation = [
 	// Draw paths with colour #333.
@@ -29,11 +29,14 @@ const animation = [
 ];
 
 export async function eraseArt() {
+	utils.sync(() => (engine.speed = 1.5));
 	let finished = animation[0]?.reverse();
 	for (let i = 1; i < animation.length; i++) {
 		finished = animation[i]?.reverse();
 	}
-	return finished; // Return the result of the last animation; used to introduce delay before skipping pages. The longest animation should be last.
+	await finished; // Wait for the result of the last animation; used to introduce delay before skipping pages. Thus, the longest animation should be last.
+	utils.sync(() => (engine.speed = 1));
+	return true;
 }
 
 export function refreshAnimation() {
