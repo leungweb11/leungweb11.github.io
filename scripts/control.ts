@@ -54,11 +54,6 @@ pg_display.addEventListener("change", async () => {
 	if (!no_animate) {
 		await eraseArt();
 	}
-	// Just in case.
-	pg_display.value = pg_display.value.trim(); // Remove whitespace.
-	if (pg_display.value == "") {
-		pg_display.value = String(1); // Correct empty input.
-	}
 	pg_cached = parseInt(pg_display.value) - 1 || 0; // Upddate cache.
 	updatePage(pg_cached);
 	refreshAnimation();
