@@ -44,10 +44,14 @@ function updatePage(pg_input = 0) {
 
 // Update page on page change.
 pg_display.addEventListener("change", async () => {
-	console.log(await eraseArt());
+	pg_display.disabled = true;
+	if (!no_animate) {
+		await eraseArt();
+	}
 	pg_cached = parseInt(pg_display.value) - 1 || 0; // Upddate cache.
 	updatePage(pg_cached);
 	refreshAnimation();
+	pg_display.disabled = false;
 });
 
 hideAll();
