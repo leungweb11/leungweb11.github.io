@@ -7,6 +7,13 @@
 		<meta name="description" content="A simple website for viewing vector graphic comics." />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles/core.css" />
+		<noscript>
+			<style>
+				#control {
+					display: none !important; /* Interactive control does not work without JavaScript. */
+				}
+			</style>
+		</noscript>
 	</head>
 
 	<body>
@@ -1128,7 +1135,9 @@
 				<path id="uuid-2449930c-9ee0-4801-a2ce-a1c9805eb98f" d="M372,160v3h33v-3h-33ZM387,153v17h3v-17h-3Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
 				<path id="uuid-64394cbe-a274-46ff-877a-c04396f67dde" d="M371.54,170l12-6h2.68l-12,6h-2.68ZM372,152.48l11.04,5.52h-2.47l-8.57-4.29v-1.23ZM391.15,159l12-6h2.68l-12,6h-2.68ZM405,169.52l-11.04-5.52h2.47l8.57,4.29v1.23Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
 			</svg>
-			<form id="control"><button>&lt;</button><input type="number" id="pg_display" name="Page" value="1" min="1" required /><button>&gt;</button></form>
+			<form id="control">
+				<label for="pg_display"><button disabled>Page</button></label><button>&lt;</button><input type="number" id="pg_display" value="1" min="1" required /><button>&gt;</button>
+			</form>
 		</main>
 		<script src="scripts/control.ts" type="module"></script>
 		<script media="(prefers-reduced-motion: no-preference)" src="scripts/animate.ts" type="module"></script>
