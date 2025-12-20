@@ -31,16 +31,35 @@ main > svg {
 	padding: 10px 20px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+#control > button:disabled {
+	cursor: default;
+	color: #a9a9a9;
+}
+
+#control > label > button {
+	/* Reset style and override cursor. */
+	background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	outline: inherit;
+	cursor: default;
+}
+
+#control > input::-webkit-outer-spin-button,
+#control > input::-webkit-inner-spin-button {
 	margin: 0;
 	appearance: none;
 	-webkit-appearance: none;
 	text-align: center;
 }
 
-input[type="number"] {
+#control > input[type="number"] {
 	appearance: textfield;
 	-moz-appearance: textfield;
 	text-align: center;
+}
+
+#control > input:invalid {
+	color: red;
 }
