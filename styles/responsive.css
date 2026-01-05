@@ -1,6 +1,11 @@
 @media screen and (max-width: 500px) {
-	svg {
+	main > svg {
 		min-width: 90% !important;
+		margin-top: 2% !important;
+		margin-bottom: 2% !important;
+	}
+	nav ul li a {
+		border-left: 0.5% solid rgb(60, 60, 60, 0.4) !important; /* Less shadow. */
 	}
 }
 
@@ -11,7 +16,10 @@
 	header {
 		min-width: 2% !important;
 	}
-	svg {
+	main > svg {
 		min-width: 95% !important;
+	}
+	html {
+		font-size: 1em !important;
 	}
 }

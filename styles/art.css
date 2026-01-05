@@ -6,17 +6,13 @@ main {
 
 main > svg {
 	width: 50%;
-	grid-column: 1 / span 3;
+	grid-column: 1;
 	min-width: 500px;
 	max-width: 1000px;
 	aspect-ratio: 1/1;
 	border: 2px solid grey;
-	margin-top: 2%;
-	margin-bottom: 2%;
-}
-
-#control {
-	grid-column-start: 2;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 #control > button {
@@ -27,8 +23,25 @@ main > svg {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+#control > input {
+	padding: 10px;
+	border-radius: 10px;
+	border-width: 0;
+	font-size: 1em;
+}
+
+#control > button:not(:last-child) {
 	/* Some spacing. */
 	padding: 10px 20px;
+}
+
+#control > button:last-child {
+	/* Left spacing. */
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
 }
 
 #control > button:disabled {

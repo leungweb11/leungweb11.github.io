@@ -58,6 +58,7 @@ if (control_form.length >= 3) {
 		} else {
 			pg_display.value = String(parseInt(pg_display.value) - 1); // Navigate to the previous page.
 		}
+		pg_display.focus(); // Focus on the input element.
 		updatePage();
 	});
 	up_button?.addEventListener("click", function () {
@@ -67,6 +68,7 @@ if (control_form.length >= 3) {
 		} else {
 			pg_display.value = String(parseInt(pg_display.value) + 1);
 		}
+		pg_display.focus();
 		updatePage();
 	});
 }
