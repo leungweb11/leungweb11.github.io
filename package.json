@@ -15,7 +15,7 @@
 		"watch": "bun build *.html --watch --console --outdir=experiments"
 	},
 	"devDependencies": {
-		"@types/bun": "^1.3.4",
+		"@types/bun": "^1.3.5",
 		"@types/animejs": "^3.1.13"
 	},
 	"dependencies": {
