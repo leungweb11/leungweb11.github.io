@@ -11,8 +11,8 @@ main > svg {
 	max-width: 1000px;
 	aspect-ratio: 1/1;
 	border: 2px solid grey;
-	margin-top: 1%;
-	margin-bottom: 1%;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
 }
 
 #control > button {
