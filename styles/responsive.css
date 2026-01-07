@@ -2,8 +2,11 @@
 	main > svg {
 		min-width: 90% !important;
 	}
-	nav ul li a {
-		border-left: 0.5% solid rgb(60, 60, 60, 0.4) !important; /* Less shadow. */
+	html {
+		font-size: 1.4em;
+	}
+	nav ul li {
+		min-width: 28px;
 	}
 }
 
