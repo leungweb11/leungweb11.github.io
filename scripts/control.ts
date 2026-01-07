@@ -49,6 +49,16 @@ pg_display.setAttribute("max", String(svg.length));
 control_form.addEventListener("submit", function (event) {
 	event.preventDefault(); // Do not allow submitting the form; it causes a refresh that is undesirable.
 });
+
+// Widely used keyboard shortcuts.
+document.addEventListener("keydown", (event) => {
+	if (event.key == "ArrowLeft") {
+		down_button.click();
+	} else if (event.key == "ArrowRight") {
+		up_button.click();
+	}
+});
+
 pg_display.addEventListener("change", () => updatePage()); // Detect and apply user changes.
 if (control_form.length >= 3) {
 	down_button?.addEventListener("click", function () {
