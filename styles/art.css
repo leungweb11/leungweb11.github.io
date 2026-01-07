@@ -49,6 +49,10 @@ main > svg {
 	color: #a9a9a9;
 }
 
+#control > button:not(:disabled):hover {
+	text-shadow: 2px 2px 4px grey;
+}
+
 #control > label > button {
 	/* Reset style and override cursor. */
 	background: none;
