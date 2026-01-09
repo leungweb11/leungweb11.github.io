@@ -3,10 +3,10 @@
 		min-width: 90% !important;
 	}
 	html {
-		font-size: 1.4em;
+		font-size: 1.4em !important;
 	}
 	nav ul li {
-		min-width: 28px;
+		min-width: 7vw !important;
 	}
 }
 
