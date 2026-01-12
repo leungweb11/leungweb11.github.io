@@ -87,6 +87,8 @@ main > article {
 	display: grid;
 	place-items: center;
 	text-align: center;
+	width: 75%;
+	line-height: 1.5;
 }
 
 main > article > img {
@@ -96,10 +98,10 @@ main > article > img {
 main > article > h3 {
 	font-family: "ComicNeue-Bold", sans-serif;
 	margin: 0;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 4%;
+	margin-bottom: 2%;
 }
 main > article > p {
 	margin: 0;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 }
