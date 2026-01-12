@@ -28,9 +28,20 @@
 
 /* Apply the custom animation to the old and new page states. */
 ::view-transition-old(root) {
-	animation: 0.3s ease-in-out both move-out;
+	animation: 0.5s ease-in-out both move-out;
 }
 
 ::view-transition-new(root) {
-	animation: 0.3s ease-in-out both move-in;
+	animation: 0.5s ease-in-out both move-in;
+}
+
+/* Disable it for the top navigation bar. */
+header {
+	view-transition-name: match-element;
+}
+
+::view-transition-group(match-element),
+::view-transition-old(match-element),
+::view-transition-new(match-element) {
+	animation: none;
 }
