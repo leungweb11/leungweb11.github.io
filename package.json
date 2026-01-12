@@ -12,6 +12,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "bun build *.html --production --minify --target=browser --outdir=dist",
+		"script": "bun build scripts/animate.ts scripts/control.ts --production --minify --target=browser --outdir=scripts",
 		"watch": "bun build *.html --watch --console --outdir=experiments"
 	},
 	"devDependencies": {
