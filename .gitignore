@@ -2,6 +2,8 @@
 .*
 # Include this file.
 !/.gitignore
+# Preserve style.
+!/..editorconfig
 # Exclude cache folders.
 node_modules/
 experiments/
