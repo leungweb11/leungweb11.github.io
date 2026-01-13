@@ -1,6 +1,6 @@
 <br>
 <div align="center">
-	<img src="images/icon.svg" width="80" height="80">
+	<img src="images/icon.svg" width="80" height="80" alt="Project icon.">
 	<h3>PrjComic</h3>
 	<p>A simple website for viewing vector graphic comics.</p>
 	<a href="https://leungweb11.github.io/">
