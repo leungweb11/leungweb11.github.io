@@ -1,47 +1,49 @@
-@view-transition {
-	navigation: auto;
-}
-
-@keyframes move-out {
-	from {
-		transform: translateX(0%);
-		opacity: 1;
+@media (prefers-reduced-motion: no-preference) {
+	@view-transition {
+		navigation: auto;
 	}
 
-	to {
-		transform: translateX(-100%);
-		opacity: 0;
+	@keyframes move-out {
+		from {
+			transform: translateX(0%);
+			opacity: 1;
+		}
+
+		to {
+			transform: translateX(-100%);
+			opacity: 0;
+		}
 	}
-}
 
-@keyframes move-in {
-	from {
-		transform: translateX(100%);
-		opacity: 0;
+	@keyframes move-in {
+		from {
+			transform: translateX(100%);
+			opacity: 0;
+		}
+
+		to {
+			transform: translateX(0%);
+			opacity: 1;
+		}
 	}
 
-	to {
-		transform: translateX(0%);
-		opacity: 1;
+	/* Apply the custom animation to the old and new page states. */
+	::view-transition-old(root) {
+		animation: 0.5s ease-in-out both move-out;
 	}
-}
 
-/* Apply the custom animation to the old and new page states. */
-::view-transition-old(root) {
-	animation: 0.5s ease-in-out both move-out;
-}
+	::view-transition-new(root) {
+		animation: 0.5s ease-in-out both move-in;
+	}
 
-::view-transition-new(root) {
-	animation: 0.5s ease-in-out both move-in;
-}
+	/* Disable it for the top navigation bar. */
+	header {
+		view-transition-name: match-element;
+	}
 
-/* Disable it for the top navigation bar. */
-header {
-	view-transition-name: match-element;
-}
-
-::view-transition-group(match-element),
-::view-transition-old(match-element),
-::view-transition-new(match-element) {
-	animation: none;
+	::view-transition-group(match-element),
+	::view-transition-old(match-element),
+	::view-transition-new(match-element) {
+		animation: none;
+	}
 }
