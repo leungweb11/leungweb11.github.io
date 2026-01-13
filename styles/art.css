@@ -8,11 +8,15 @@ main > svg {
 	width: 50%;
 	grid-column: 1;
 	min-width: 500px;
-	max-width: 1000px;
+	max-width: 75vh;
 	aspect-ratio: 1/1;
 	border: 2px solid grey;
 	margin-top: 2vh;
 	margin-bottom: 2vh;
+}
+
+main > svg:not(:first-child) {
+	display: none; /* Initial state. */
 }
 
 #control > button {
@@ -50,7 +54,7 @@ main > svg {
 }
 
 #control > button:not(:disabled):hover {
-	text-shadow: 2px 2px 4px grey;
+	font-family: "ComicNeue-Bold";
 }
 
 #control > label > button {

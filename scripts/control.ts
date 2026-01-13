@@ -38,9 +38,9 @@ async function updatePage() {
 	await eraseArt();
 	for (let i = 0; i < svg.length; i++) {
 		if (i === pg_index) continue; // Exception for the target page.
-		svg[i]?.setAttribute("display", "none"); // Hide everything else.
+		svg[i]?.setAttribute("style", "display: none !important;"); // Hide everything else.
 	}
-	svg[pg_index]?.setAttribute("display", "inline");
+	svg[pg_index]?.setAttribute("style", "display: inline !important;"); // !important is necessary to neglect the initial state for main > svg:not(:first-child).
 	refreshAnimation();
 }
 
